@@ -1,0 +1,152 @@
+.hr-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.logout-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control,
+.form-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.mt-4 {
+  margin-top: 20px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-striped {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-striped th,
+.table-striped td {
+  border: 1px solid #dddddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.table-striped th {
+  background-color: #eb6161;
+}
+
+.table-striped tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+  .table-striped,
+  .table-striped thead,
+  .table-striped tbody,
+  .table-striped th,
+  .table-striped td,
+  .table-striped tr {
+    display: block;
+  }
+
+  .table-striped th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-striped tr {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+
+  .table-striped td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .table-striped td:before {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    transform: translateY(-50%);
+  }
+
+  .table-striped td:nth-of-type(1):before {
+    content: "Name";
+  }
+  .table-striped td:nth-of-type(2):before {
+    content: "Email";
+  }
+  .table-striped td:nth-of-type(3):before {
+    content: "Role";
+  }
+  .table-striped td:nth-of-type(4):before {
+    content: "Experience";
+  }
+  .table-striped td:nth-of-type(5):before {
+    content: "Status";
+  }
+}

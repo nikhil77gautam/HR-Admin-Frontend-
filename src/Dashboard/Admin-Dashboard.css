@@ -1,0 +1,158 @@
+.admin-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.logout-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #555;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.approve-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.approve-button:hover {
+  background-color: darkgreen;
+}
+
+.reject-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.reject-button:hover {
+  background-color: darkred;
+}
+
+.approved-users-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.approved-users-list li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  .user-table,
+  .user-table thead,
+  .user-table tbody,
+  .user-table th,
+  .user-table td,
+  .user-table tr {
+    display: block;
+  }
+
+  .user-table th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .user-table tr {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+
+  .user-table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .user-table td:before {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    transform: translateY(-50%);
+  }
+
+  .user-table td:nth-of-type(1):before {
+    content: "Name";
+  }
+  .user-table td:nth-of-type(2):before {
+    content: "Email";
+  }
+  .user-table td:nth-of-type(3):before {
+    content: "Role";
+  }
+  .user-table td:nth-of-type(4):before {
+    content: "Experience";
+  }
+  .user-table td:nth-of-type(5):before {
+    content: "Status";
+  }
+  .user-table td:nth-of-type(6):before {
+    content: "Actions";
+  }
+}

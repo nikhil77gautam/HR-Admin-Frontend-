@@ -1,0 +1,112 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #5b5d5a;
+  border-radius: 50px;
+}
+
+.auth-container,
+.dashboard-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.auth-container h2,
+.dashboard-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.auth-container form,
+.dashboard-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-container input,
+.dashboard-container input,
+.auth-container select,
+.dashboard-container select,
+.auth-container button,
+.dashboard-container button {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.auth-container input:focus,
+.dashboard-container input:focus,
+.auth-container select:focus,
+.dashboard-container select:focus {
+  border-color: #0152a8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(1, 90, 184, 0.5);
+}
+
+.auth-container button,
+.dashboard-container button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.auth-container button:hover,
+.dashboard-container button:hover {
+  background-color: #0056b3;
+}
+
+.auth-container .link,
+.dashboard-container .link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.auth-container .link a,
+.dashboard-container .link a {
+  color: #0352a7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-container .link a:hover,
+.dashboard-container .link a:hover {
+  color: #0056b3;
+}
+
+.user-list {
+  margin-top: 30px;
+}
+
+.user-item {
+  background-color: #55a829;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.user-item h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.user-item p {
+  margin: 5px 0;
+  color: #666;
+}
